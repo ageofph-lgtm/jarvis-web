@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from "react";
 import { Conversation, Document } from "@/entities/all";
 import { InvokeLLM, UploadFile } from "@/integrations/Core";
@@ -353,7 +352,7 @@ export default function ChatPage() {
         <img 
           src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/a76b59a82_R9.png" 
           alt="Jarvis Logo" 
-          className="w-28 h-28 sm:w-32 sm:h-32" // Aumentado ainda mais o tamanho
+          className="w-28 h-28 sm:w-32 sm:h-32 mix-blend-multiply dark:mix-blend-screen" // Aumentado ainda mais o tamanho
         />
       </div>
       
