@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
@@ -32,12 +31,7 @@ export default function FilesPanel({ documents }) {
         <div className="flex-1 overflow-y-auto mobile-scroll">
           <Table>
             <TableHeader>
-              <TableRow className="border-b dark:border-gray-700">
-                <TableHead className="w-[35px] sm:w-[40px] px-1 sm:px-2 text-gray-700 dark:text-gray-300"></TableHead> {/* Ícone */}
-                <TableHead className="px-1 sm:px-2 text-sm text-gray-700 dark:text-gray-300">Nome</TableHead>
-                {/* <TableHead className="px-2">Tamanho</TableHead> */}
-                <TableHead className="w-[50px] sm:w-[60px] px-1 sm:px-2 text-right text-gray-700 dark:text-gray-300"></TableHead> {/* Ações */}
-              </TableRow>
+              <TableRow className="border-b dark:border-gray-700"><TableHead className="w-[35px] sm:w-[40px] px-1 sm:px-2 text-gray-700 dark:text-gray-300"></TableHead><TableHead className="px-1 sm:px-2 text-sm text-gray-700 dark:text-gray-300">Nome</TableHead><TableHead className="w-[50px] sm:w-[60px] px-1 sm:px-2 text-right text-gray-700 dark:text-gray-300"></TableHead></TableRow>
             </TableHeader>
             <TableBody>
               {documents.map((doc) => (
